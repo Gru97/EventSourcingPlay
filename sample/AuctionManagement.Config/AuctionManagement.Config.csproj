@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AuctionManagement.Gateways.RestApi\Framework.Persistence.ES\Framework.Persistence.ES.csproj" />
+    <ProjectReference Include="..\..\src\Framework.Application\Framework.Application.csproj" />
+    <ProjectReference Include="..\..\src\Framework.Domain\Framework.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Framework.Persistence.ES\Framework.Persistence.ES.csproj" />
+    <ProjectReference Include="..\AuctionManagement.Application\AuctionManagement.Application.csproj" />
+    <ProjectReference Include="..\AuctionManagement.Domain\AuctionManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
